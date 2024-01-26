@@ -1,4 +1,3 @@
-
 "use client"
 
 import * as React from "react"
@@ -42,9 +41,10 @@ const frameworks = [
   },
 ]
 
-export default function Home() {
+export function ComboboxDemo() {
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState("")
+
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
@@ -87,10 +87,5 @@ export default function Home() {
         </Command>
       </PopoverContent>
     </Popover>
-  );
+  )
 }
-
-
-
-
-
